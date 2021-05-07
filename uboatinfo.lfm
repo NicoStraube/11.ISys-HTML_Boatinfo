@@ -1,0 +1,253 @@
+object Form1: TForm1
+  Left = 376
+  Height = 314
+  Top = 196
+  Width = 345
+  Caption = 'HTML-Boatinfo'
+  ClientHeight = 0
+  ClientWidth = 0
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object lEditBoatNumber: TLabeledEdit
+    Left = 16
+    Height = 23
+    Top = 32
+    Width = 88
+    EditLabel.Height = 15
+    EditLabel.Width = 88
+    EditLabel.Caption = 'Boat number:'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+  end
+  object lEditBoatName: TLabeledEdit
+    Left = 16
+    Height = 23
+    Top = 80
+    Width = 112
+    EditLabel.Height = 15
+    EditLabel.Width = 112
+    EditLabel.Caption = 'Boat name:'
+    EditLabel.ParentColor = False
+    TabOrder = 1
+  end
+  object lEditEnginePower: TLabeledEdit
+    Left = 16
+    Height = 23
+    Top = 144
+    Width = 80
+    EditLabel.Height = 15
+    EditLabel.Width = 80
+    EditLabel.Caption = 'Engine power:'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+  end
+  object lEditSailArea: TLabeledEdit
+    Left = 16
+    Height = 23
+    Top = 208
+    Width = 80
+    EditLabel.Height = 15
+    EditLabel.Width = 80
+    EditLabel.Caption = 'Sail area:'
+    EditLabel.ParentColor = False
+    TabOrder = 3
+  end
+  object lEditPersonsMin: TLabeledEdit
+    Left = 16
+    Height = 23
+    Top = 256
+    Width = 80
+    EditLabel.Height = 15
+    EditLabel.Width = 80
+    EditLabel.Caption = 'Min. persons:'
+    EditLabel.ParentColor = False
+    TabOrder = 4
+  end
+  object lCurrentNumber: TLabel
+    Left = 152
+    Height = 15
+    Top = 16
+    Width = 115
+    Caption = 'Current boat number:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object lCurrentNumber_: TLabel
+    Left = 152
+    Height = 15
+    Top = 32
+    Width = 5
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ICurrentName: TLabel
+    Left = 152
+    Height = 15
+    Top = 56
+    Width = 103
+    Caption = 'Current boat name:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object lCurrentName_: TLabel
+    Left = 152
+    Height = 15
+    Top = 72
+    Width = 5
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object buttonReset: TButton
+    Left = 136
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = 'Reset'
+    OnClick = buttonResetClick
+    TabOrder = 5
+  end
+  object buttonGetInfo: TButton
+    Left = 248
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = 'Get info'
+    OnClick = buttonGetInfoClick
+    TabOrder = 6
+  end
+  object lDebug: TLabel
+    Left = 16
+    Height = 15
+    Top = 289
+    Width = 5
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ICurrentEnginePower: TLabel
+    Left = 152
+    Height = 15
+    Top = 112
+    Width = 118
+    Caption = 'Current engine power:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object lCurrentEnginePower_: TLabel
+    Left = 152
+    Height = 15
+    Top = 128
+    Width = 5
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ICurrentSailArea: TLabel
+    Left = 152
+    Height = 15
+    Top = 168
+    Width = 88
+    Caption = 'Current sail area:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object lCurrentSailArea_: TLabel
+    Left = 152
+    Height = 15
+    Top = 184
+    Width = 5
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ICurrentPersonsMin: TLabel
+    Left = 152
+    Height = 15
+    Top = 208
+    Width = 114
+    Caption = 'Current min. persons:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object lCurrentPersonsMin_: TLabel
+    Left = 152
+    Height = 15
+    Top = 224
+    Width = 5
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object saveDialog: TSaveDialog
+    Left = 296
+    Top = 16
+  end
+end
