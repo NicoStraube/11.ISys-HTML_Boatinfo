@@ -154,7 +154,7 @@ begin
     else if (boatNumber[1] = 'S') then
       // type = TSailboat
     begin
-      // Check if string if float.
+      // Check if string is float.
       if (not TryStrToFloat(lEditSailArea.Caption, sailArea)) then
       begin
         lDebug.Font.Color := clRed;
